@@ -1,0 +1,67 @@
+.card-canais{
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card-canais h6{
+    font-size: 14px;
+    font-weight: normal;
+}
+.card-footer{
+    padding:0;
+    background-color: rgba(255,255,255,0.2);
+}
+.bg-c-yellow{
+    background:-webkit-gradient(linear,left top,right top,from(#960005),to(#C92026));
+    background:linear-gradient(to right,#960005,#C92026)}.bg-simple-c-yellow{background:#960005;
+}
+.text-c-yellow{
+    color:#960005
+}
+.bg-c-orenge
+    {
+    background:-webkit-gradient(linear,left top,right top,from( #6B7D87),to(#889FAC));
+    background:linear-gradient(to right, #6B7D87,#889FAC)
+}
+.bg-simple-c-orenge{
+    background: #6B7D87
+}
+.text-c-orenge{
+color: #6B7D87}.bg-c-lite-green{
+    background:-webkit-gradient(linear,left top,right top,from(#003B4F),to(#0C617D));
+    background:linear-gradient(to right,#003B4F,#0C617D)
+}
+.bg-simple-c-lite-green{
+    background:#003B4F
+}
+.text-c-lite-green{
+    color:#003B4F
+}
+.update-card{
+    color:#fff
+}
+.update-card .card-footer{
+    background-color:transparent;border-top:1px solid #fff
+}
+.statustic-progress-card .progress{
+    height:5px
+}
+.user-radial-card{
+    text-align:center
+}           
+.bg-c-yellow:before{
+    -webkit-animation:yellow-blink-bar .5s linear infinite;
+    animation:yellow-blink-bar .5s linear infinite
+}
+.bg-c-green{
+    background:-webkit-gradient(linear,left top,right top,from(#003B4F),to(#0C617D));
+    background:linear-gradient(to right,#003B4F,#0C617D)
+}
+.bg-simple-c-green{
+    background:#0ac282}.text-c-green{color:#0ac282
+}
+.link-canais{
+    text-decoration: none;
+}

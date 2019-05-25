@@ -1,0 +1,51 @@
+<!--Teste-->
+<div class="bg-panel">
+    <div class="container">
+        <div class="panel row">
+            <div class="col-sm-4"></div>
+        <!-- <div class="Absolute-Center is-Responsive"> -->
+            <div class="col-sm-4 box-login">
+                <img src="assets/img/logo-paneas-n.png" />
+          <!-- <div class="col-sm-12 col-md-10 col-md-offset-1"> -->
+              <div class="card-body">
+            <!-- <form action="" id="loginForm"> -->
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa fa-user"></i></span>
+                    </div>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input class="form-control" (focus)="loginFocus()" type="text" id="username" [(ngModel)]='username' placeholder="Usuário" />
+            </div>
+            <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-key"></i></span>
+                </div>
+              <input class="form-control" (focus)="loginFocus()"  (blur)="SetFocos()"  [type]="!showPassword ? 'password': 'text'" id="password" [(ngModel)]='password'
+                placeholder="••••••••" />                
+              </div>             
+              <div class="checkbox checkbox-primary">
+                <div class="form-group input-group">
+                  <label class="ckbcontainer ml-2 mr-2">
+                    <div class="alert-warning rounded-sm"*ngIf="hasErros">
+                      {{ErrosMenssage}}
+                      {{hasErros}}
+                    </div>
+                    <input type="checkbox" id="chSenha" (change)="mostrarSenha($event)" class="btn btn-primary" />
+                    <span class="checkmark-eye"><i class="fa fa-eye"></i></span>
+                  </label>
+                </div>
+              </div>
+               
+            
+            <div class="form-group input-group">
+              <input type="button" (click)="getLog()" #btnLogar class="btn btn-master btn-entrar" value="ENTRAR">
+            </div>
+            <div class="form-group text-center">
+              <!-- <a href="#">Esqueci a senha</a> -->
+            </div>
+            <!-- </form>         -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>

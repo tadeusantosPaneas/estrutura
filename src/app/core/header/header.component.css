@@ -1,0 +1,28 @@
+.sticky-top{
+    margin-top: -60px;
+    margin-bottom: 30px;
+    background-color: #EDEDED;
+    -webkit-box-shadow: 0px 4px 11px -7px rgba(0,0,0,0.62);
+-moz-box-shadow: 0px 4px 11px -7px rgba(0,0,0,0.62);
+box-shadow: 0px 4px 11px -7px rgba(0,0,0,0.62);
+}
+
+
+.fa-sign-out {
+    color: #C92026;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.fa-user-circle{
+    color:  #0C617D;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo-topo{
+    height: 40px;
+    margin-left: 28%;
+}
+

@@ -1,0 +1,27 @@
+<div class="container-fluid">   
+  
+    <div class="row">
+      <!-- {{subItem.id}} >> {{subItem.descricao}} -->
+      <div class="col-xl-3 col-md-6 mb-3"  *ngFor="let subItem of itemsSubMenu">
+          <!-- <div [ngClass]="{'card bg-c-yellow update-card': subItem.id == '7', 'card bg-c-green update-card': subItem.id == '8', 'card bg-c-lite-green update-card': subItem.id == '9'}"> -->
+            <a class="link-canais" [routerLink]="[subItem.url]" queryParamsHandling preserveFragment>
+              <div [ngClass]="subItem.itemstyleClass" class="card-canais">
+                <div>
+                    <div class="col-12">
+                        <h4 class="text-white" >{{subItem.item}}</h4>
+                        <h6 class="text-white m-b-0"> {{subItem.descricao}}</h6>
+                    </div>
+                    <!-- <div class="col-4 text-right">
+                    <canvas id="update-chart-1" height="50"></canvas>
+                    </div> -->
+                </div>
+                <!--<div class="card-footer">            
+                  <a class="nav-link" [routerLink]="[subItem.url]" queryParamsHandling preserveFragment>
+                      <p class="text-white m-b-0 ml-2"><i class="fa fa-view m-r-10"></i> {{subItem.item}} </p>
+                  </a>
+                </div>-->
+              </div>
+            </a>
+          </div>
+  </div> 
+  <!-- fim div row -->

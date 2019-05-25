@@ -1,0 +1,42 @@
+<header class="sticky-top">
+        <nav class="navbar navbar-light">       
+            <a class="navbar-brand">
+               <i *ngIf="(user$ | async) as user" tabindex="0" (keyup.space)="navegator.toggle()" (click)="navegator.toggle()" class="fa fa-bars mr-2"></i>
+            </a>    
+            
+            <img src="assets/img/logo-paneas.png" class="logo-topo"/>
+           
+            <pns-navegator #navegator> 
+                <img src="assets/img/logo-paneas-n.png" class="logo-menu"/>               
+                <ul class="list-unstyled">
+                    <li>  
+                        <a [routerLink]="['menu',0]" skipLocationChange queryParamsHandling preserveFragment (click)="navegator.toggle()"><i class="fa fa-bars mr-2"></i> Todos</a>
+                    </li>
+                    <li *ngFor="let menuitem of (mainItem$ | async)" class="menu-itens">  
+                        <a [routerLink]="['menu',menuitem.id]" skipLocationChange queryParamsHandling preserveFragment (click)="navegator.toggle()">∟ {{menuitem.item}}</a>                                     
+                    </li>
+                </ul>
+            </pns-navegator>
+    
+            
+    
+            <div *ngIf="(user$ | async) as user; else login">
+                <i class="fa fa-user-circle"></i>
+                <a class="mr-1">{{ user?.Nome}}</a>
+                <a (click)="logout()"><i class="fa fa-sign-out"></i></a>
+            </div>
+    
+    
+            <ng-template #login>
+                <span class="navbar-text">
+                    <span claa="navbar-next">
+                        não há usuário logado
+                    </span>
+                </span>
+            </ng-template>
+        </nav>
+        <div class="fixed-top">
+            <pns-alert></pns-alert>
+            <pns-loading></pns-loading>
+        </div>
+    </header>
